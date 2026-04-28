@@ -12,7 +12,7 @@ You are running the **close** phase.
 - *Mode: pilot* → typically `specs/step/recheck-learnings.md` also exists.
 - *Mode: auto* → `specs/step/self-audit.md` exists.
 
-If decisions or implementation notes are missing, stop and explain. If the mode-specific file is missing, point to the skill that produces it (`/d3-recheck` or `/d3-self-audit`).
+If decisions or implementation notes are missing, stop and explain. If the mode-specific file is missing, point to the command that produces itb (`/d3-recheck` or `/d3-self-audit`).
 
 ## Procedure
 1. Read every file under `specs/step/`.

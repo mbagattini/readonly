@@ -4,7 +4,7 @@ description: Collaborative review of the implementation, before pilot's manual e
 
 # /d3-review
 
-You are running the **review** phase. This skill exists for **pilot mode** only.
+You are running the **review** phase. This command exists for **pilot mode** only.
 
 ## Mode check
 Read CLAUDE.md. If `Mode: auto`, refuse:

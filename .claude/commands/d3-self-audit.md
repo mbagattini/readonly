@@ -4,7 +4,7 @@ description: Auto-mode replacement for review + recheck. Audit the implementatio
 
 # /d3-self-audit
 
-You are running the **self-audit** phase. This skill exists for **auto mode**, where the pilot does not edit code.
+You are running the **self-audit** phase. This command exists for **auto mode**, where the pilot does not edit code.
 
 ## Mode check
 Read CLAUDE.md. If `Mode: pilot`, refuse:
@@ -28,7 +28,7 @@ You are looking for problems, not confirming work. Default to suspicion of your 
    - **Gaps** — did I skip anything `decisions.md` required?
    - **Fragility** — under what conditions does this break? Edge cases, error paths, assumed inputs.
 4. For each finding, decide: correct now, or note as *thing to watch*.
-5. Apply corrections directly to the code. These corrections are part of this skill's output, not a separate `/d3-implement` invocation.
+5. Apply corrections directly to the code. These corrections are part of this command's output, not a separate `/d3-implement` invocation.
 6. If the pilot has provided high-level feedback (e.g. "this doesn't do what I expected"), treat it as an additional finding and address it explicitly.
 7. Copy `.d3/templates/self-audit.md` to `specs/step/self-audit.md` and fill it.
 
@@ -36,10 +36,10 @@ You are looking for problems, not confirming work. Default to suspicion of your 
 - Findings must be concrete: location + nature of the issue. Not "the code could be cleaner."
 - A self-audit that finds nothing is a red flag. Re-examine.
 - Do not expand scope under the guise of an audit. Out-of-scope concerns go to `specs/step/out-of-scope.md`.
-- If corrections are non-trivial, run them as part of this skill but record them in the self-audit output, then commit via `/d3-commit-claude`.
+- If corrections are non-trivial, run them as part of this command but record them in the self-audit output, then commit via `/d3-commit-claude`.
 
 ## Output
-- Code corrections under `src/` (if any).
+- Code corrections inside source roots (if any).
 - `specs/step/self-audit.md`
 
 ## Closing block

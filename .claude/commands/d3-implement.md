@@ -12,18 +12,24 @@ You are running the **implement** phase.
 If missing, stop and tell the pilot to run `/d3-discuss` first.
 
 ## Procedure
-1. Read `decisions.md`. Project core is already in context. Read reference content via `/d3-recall` only if a specific hypothesis warrants it.
-2. Write code under `src/` per the decisions and the implementation plan.
-3. Copy `.d3/templates/implementation-notes.md` to `specs/step/implementation-notes.md` and fill it. Skip sections that have nothing to say.
+1. Read `decisions.md`. Project core is already in context (including `source-roots.md` and `boundaries.md`). Read reference content via `/d3-recall` only if a specific hypothesis warrants it.
+2. Plan the writes. Each target path must:
+   - Fall inside a path listed in `source-roots.md`, or be `specs/step/implementation-notes.md`.
+   - Not match any pattern in `boundaries.md`.
+   If a write needs to land outside source roots (e.g. a config file at repo root, a new project file in the solution), declare it in chat and wait for pilot confirmation before writing.
+3. Implement per the decisions and the implementation plan.
+4. Copy `.d3/templates/implementation-notes.md` to `specs/step/implementation-notes.md` and fill it. Skip sections that have nothing to say.
 
 ## Rules
 - Implement only what `decisions.md` says. No silent extras.
 - Do not refactor untouched code. If you spot something off in code outside this step's scope, record it in `specs/step/out-of-scope.md`.
+- Do not write to paths matching `boundaries.md`.
+- Do not write outside source roots without explicit pilot confirmation.
 - Do not commit. Commits are explicit, via `/d3-commit-claude`.
 - The notes file is the *why*, not the *what*. Git carries the diff.
 
 ## Outputs
-- Code under `src/`.
+- Code inside source roots.
 - `specs/step/implementation-notes.md`
 
 ## Closing block

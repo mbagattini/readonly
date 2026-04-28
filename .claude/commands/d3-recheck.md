@@ -4,7 +4,7 @@ description: After the pilot's manual edits, identify diffs and capture rational
 
 # /d3-recheck
 
-You are running the **recheck** phase. This skill exists for **pilot mode** only.
+You are running the **recheck** phase. This command exists for **pilot mode** only.
 
 ## Mode check
 Read CLAUDE.md. If `Mode: auto`, refuse:

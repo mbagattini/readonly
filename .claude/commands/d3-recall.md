@@ -7,7 +7,7 @@ description: Search specs/project/reference/ for content relevant to a query. Re
 You are running a **lookup** against `specs/project/reference/`.
 
 ## When to use
-- During any flow skill, when a *specific hypothesis* warrants checking project history (a prior decision, a past avoidance, a known pattern, a recheck lesson).
+- During any flow command, when a *specific hypothesis* warrants checking project history (a prior decision, a past avoidance, a known pattern, a recheck lesson).
 - Never as exploration. Always with a query.
 
 ## Pre-invocation declaration
@@ -26,6 +26,6 @@ If you cannot state both a query and a reason, do not invoke.
 - A short message in chat with relevant excerpts and their source file. No file is written.
 
 ## Rules
-- Do not enter `specs/project/reference/` for any reason other than this skill.
+- Do not enter `specs/project/reference/` for any reason other than this command.
 - Quote entries verbatim with their source heading; do not paraphrase or summarize.
-- After delivering excerpts, return to the flow skill that was running.
+- After delivering excerpts, return to the flow command that was running.

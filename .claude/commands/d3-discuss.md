@@ -10,7 +10,7 @@ You are running the **discuss** phase.
 - `specs/step/step-brief.md` exists.
 - `specs/step/understanding.md` exists.
 
-If either is missing, stop and tell the pilot which file is needed and which skill produces it.
+If either is missing, stop and tell the pilot which file is needed and which command produces it.
 
 ## Procedure
 1. Read `step-brief.md` and `understanding.md`.
